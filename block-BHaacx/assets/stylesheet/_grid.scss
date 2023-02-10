@@ -1,0 +1,78 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+// Marketing
+.marketing{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 40vh;
+}
+.marketing-tips{
+    display: grid;
+    align-self: center;
+    text-align: center;
+    padding: 2rem;
+}
+.tips1{
+    background-color: $secondary;
+    color: aliceblue;
+}
+.tips2{
+    background-color: $primery;
+    color: aliceblue;
+}
+.tips3{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: aliceblue;
+}
+.tips4{
+    background-color: rgb(167, 167, 147);
+    color: white;
+}
+// Experience
+
+.experience{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50vh);
+}
+// Contact-Us
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.say-hello{
+    display: grid;
+    grid-column: span 2;
+}
+.map{
+    display: grid;
+}
+iframe{
+    display: grid;
+    width: 130vh;
+    height: 50vh;
+    justify-self: center;
+    margin: 2rem;
+}
+// Footer
+.footer{
+    display: grid;
+    justify-content: center;
+    padding: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    html{
+        font-size: 12px;
+    }
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+}

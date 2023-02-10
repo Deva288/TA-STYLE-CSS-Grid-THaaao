@@ -1,0 +1,335 @@
+
+html{
+    font-size: 1rem;
+}
+body{
+    line-height: 1.2;
+    font-family: sans-serif;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: rgba(22, 22, 22, 0.7);
+    &:hover{
+        color: $primery;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+.btn-primary{
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border: 2px solid $text-black;
+    border-radius: 10rem;
+    &:hover{
+        background: $primery;
+        transform: scale(1.2);
+    }
+}
+.active  a {
+    color: $primery;
+}
+// 
+h2{
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+.my-skills p{
+    color: $text-black;
+    font-size: 0.7rem;
+    margin-bottom: 0.6rem;
+}
+progress{
+    width: 100%;
+    margin-bottom: 1.5rem;
+   background-color: black;
+    height: 2px;
+}
+// Hero-Artical
+.hero-img{
+   background-image: url(../media/home-img.jpg);
+   height: 100vh;
+   background-size: cover;
+   background-position: center center;
+}
+.brand{
+    font-size: 1.3rem;
+    padding: 3rem 8rem;
+    display: block;
+    font-weight: 800;
+}
+.hero-artical{
+    background-color: $hero-background;
+    padding: 3rem;
+}
+.nav{
+    padding: 0 3rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-bottom: 8rem;
+}
+#toggle, .bars{
+    display: none;
+}
+small{
+    display: block;
+    margin-bottom: 1rem;
+    word-spacing: 5px;
+    font-size: 0.7rem;
+    color: rgba(128, 128, 128, 0.6);
+    text-transform: uppercase;
+}
+strong{
+    color: rgba(0, 0, 0, 0.877);
+    font-weight: 500;
+}
+h1{
+    font-size: 2.5rem;
+    font-family: $font-family3;
+    margin-bottom: 1rem;
+    color: rgba(97, 95, 95, 0.904);
+}
+.hero-artical p{
+    font-size: .8rem;
+    color: rgba(128, 128, 128, 0.6);
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+// My-skills
+
+.artical-skill{
+    padding: 1.6rem;
+    background-color: beige;
+}
+h3{
+    color: $text-black;
+    font-size: 2.5rem;
+    font-family: $font-family3;
+    padding-bottom: 2rem;
+}
+.artical-skill-para{
+    color: $primery;
+    margin-bottom: 2rem;
+}
+h3 ~ p{
+    font-size: .8rem;
+    line-height: 1.8;
+    color: rgba(128, 128, 128, 0.6);
+    margin-bottom: 1.4rem;
+}
+.my-skills{
+    background-color: $secondary;
+    padding: 1.5rem 2rem;
+}
+div span{
+    color: white;
+    font-size: 0.7rem;
+    margin-bottom: 2.5rem;
+    display: block;
+}
+// Marketing
+
+h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+h4 ~ p{
+    line-height: 1.5;
+}
+.marketing-tips a{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+// Experience
+.exp-artical{
+    background-color: $primery;
+    padding: 2rem  3rem;
+}
+.exp-img img{
+    height: 50vh;
+}
+.graphic{
+    margin-bottom: 1rem;
+}
+h2 + p{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 2rem;
+}
+h5{
+    font-size: 1.4rem;
+    margin-bottom: .4rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+tagname{
+    font-size: 0.8rem;
+    color: navy;
+    font-weight: 700;
+}
+h5 ~ p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.graphic, .web a{
+    font-size: 2rem;
+}
+// Education
+.education-artical{
+    background-color: $secondary;
+    padding: 2rem  3rem;
+}
+// Contact
+
+.contact-us{
+    background-color: $primery;
+    // height: 120vh;
+}
+.say-hello{
+    padding: 2rem;
+}
+fieldset input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid $secondary;
+    background-color: $primery;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+}
+textarea{
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid $secondary;
+    background-color: $primery;
+    width: 100%;
+}
+#btn-secondry{
+    font-size: 1rem;
+    padding: 0.8rem 6rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 10rem;
+}
+.contact-pic img{
+    height: 100%;
+    object-fit: cover;
+}
+// Address
+address{
+    padding: 2.5rem;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+.office{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 1rem 0 1.5rem;
+    display: block;
+}
+.call{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.call i {
+    margin-right: 1rem;
+}
+.mail a{
+    display: block;
+    color: $secondary;
+    margin-top: 1rem;
+}
+.mail i{
+    color: black;
+    margin-right: 1rem;
+}
+.temp{
+    color: red;
+    font-size: 0.8rem;
+}
+.footer-nav{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+.footer-nav a{
+    margin-right: 2rem;
+}
+
+// Media Queries 
+
+@media screen and (max-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .container{
+        max-width: 960px;
+    }
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 720px;
+    }
+    html{
+        font-size: 12px;
+    }
+    .sm-column{
+        flex-direction: column;
+    }
+
+// Navbar
+.nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0%;
+    bottom: 0;
+    width: 100%;
+    padding-top: 5rem;
+    z-index: 9;
+    background-color: rgba(30, 183, 210, 0.8);
+}
+#toggle:checked ~ .nav{
+    display: inline-block;
+}
+.bars{
+    display: inline-block;
+    font-size: 2rem;
+}
+.brand, .bars{
+    position: fixed;
+    margin-top: 1.5rem;
+    z-index: 99;
+}
+.bars{
+    top: 0.5rem;
+    right: 46%;
+}
+.nav-item{
+    margin: 12px 0;
+}
+}
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+    html{
+        font-size: 10px;
+    }
+}
